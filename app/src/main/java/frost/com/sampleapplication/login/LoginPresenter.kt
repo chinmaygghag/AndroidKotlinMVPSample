@@ -28,7 +28,6 @@ class LoginPresenter : LoginInterface.Listner {
      * @param: Failure Message
      * */
     override fun loginFailure(message: String) {
-        Log.v("here in presenter","message : "+message)
         view.loginFailure(message)
     }
 

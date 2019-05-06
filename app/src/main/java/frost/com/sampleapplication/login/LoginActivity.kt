@@ -64,7 +64,6 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener, LoginInterface.
     }
 
     override fun loginSuccess(message: String) {
-        Log.v("here in view","message : "+message)
         Toast.makeText(this,message,Toast.LENGTH_SHORT).show()
     }
 

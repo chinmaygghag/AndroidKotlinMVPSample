@@ -27,7 +27,6 @@ class LoginInteractorImpl : LoginInterface.interactor{
         }else if(!loginModel.userName.equals("admin") && loginModel.password.equals("admin")){
             presenter.loginFailure("Incorrect Username")
         }else{
-            Log.v("LoginModel ","Username : "+loginModel.userName)
             presenter.loginFailure("Incorrect Username & Password combination")
         }
     }
